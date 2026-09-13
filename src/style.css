@@ -1,0 +1,1021 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+
+/* =======================================================
+   GLOBAL
+======================================================= */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8fa;
+    color: #111827;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+
+/* =============================
+   NAVBAR
+============================= */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.82);
+
+    border: 1px solid rgba(17, 24, 39, 0.08);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.06);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =============================
+   BRAND
+============================= */
+
+.nav-brand {
+    font-family: 'Sora', sans-serif;
+
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+
+    color: #374151;
+
+    transition: color 0.2s ease;
+}
+
+.nav-brand:hover {
+    color: #111827;
+}
+
+
+/* =============================
+   NAV LINKS
+============================= */
+
+.nav-link {
+    display: block;
+
+    padding: 7px 12px;
+
+    border-radius: 8px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #111827;
+    background-color: rgba(17, 24, 39, 0.05);
+}
+
+
+/* ACTIVE LINK */
+
+.nav-link.active {
+    color: #111827;
+    background-color: rgba(17, 24, 39, 0.08);
+}
+
+
+/* =============================
+   DARK MODE
+============================= */
+
+body.dark .navbar {
+    background: rgba(8, 8, 31, 0.78);
+
+    border-color: rgba(168, 76, 254, 0.18);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* BRAND */
+
+body.dark .nav-brand {
+    color: #d1d5db;
+}
+
+body.dark .nav-brand:hover {
+    color: #ffffff;
+}
+
+/* LINKS */
+
+body.dark .nav-link {
+    color: #9ca3af;
+}
+
+body.dark .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(168, 76, 254, 0.08);
+}
+
+
+/* ACTIVE */
+
+body.dark .nav-link.active {
+    color: #ffffff;
+    background-color: rgba(168, 76, 254, 0.16);
+}
+
+
+/* =============================
+   THEME TOGGLE
+============================= */
+
+.theme-toggle {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(17, 24, 39, 0.1);
+
+    background: rgba(17, 24, 39, 0.05);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(17, 24, 39, 0.1);
+
+    transform: translateY(-1px);
+}
+
+
+/* ICONS */
+
+.theme-toggle img {
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* LIGHT MODE */
+
+.toggle-sun {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.toggle-moon {
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+
+/* DARK MODE */
+
+body.dark .theme-toggle {
+    border-color: rgba(168, 76, 254, 0.25);
+
+    background: rgba(168, 76, 254, 0.1);
+}
+
+body.dark .theme-toggle:hover {
+    background: rgba(168, 76, 254, 0.17);
+}
+
+body.dark .toggle-sun {
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+body.dark .toggle-moon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* =======================================================
+   HERO SECTION
+======================================================= */
+
+.hero-title {
+    color: #111827;
+}
+
+.hero-subtitle {
+    color: #111827;
+}
+
+.hero-text {
+    color: #374151;
+}
+
+.hero-label {
+    color: #6b7280;
+}
+
+
+/* DARK MODE */
+
+body.dark .hero-title {
+    color: #a84cfe;
+}
+
+body.dark .hero-subtitle {
+    color: #a84cfe;
+}
+
+body.dark .hero-text {
+    color: #e5e7eb;
+}
+
+body.dark .hero-label {
+    color: #9ca3af;
+}
+
+
+/* =======================================================
+   PROFILE IMAGE BORDERS
+======================================================= */
+
+.profile-border,
+.profile-image {
+    border-color: #111827;
+}
+
+body.dark .profile-border,
+body.dark .profile-image {
+    border-color: #a84cfe;
+}
+
+
+/* =======================================================
+   HERO SCROLL BUTTON
+======================================================= */
+
+.scroll-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 16px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+
+    background-color: #ffffff;
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.scroll-button:hover {
+    border-color: #111827;
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.scroll-arrow {
+    font-size: 17px;
+    line-height: 1;
+
+    animation: scrollDown 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+
+    0%,
+    100% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+}
+
+
+/* DARK MODE */
+
+body.dark .scroll-button {
+    border-color: rgba(168, 76, 254, 0.45);
+
+    background-color: #08081f;
+    color: #e5e7eb;
+}
+
+body.dark .scroll-button:hover {
+    border-color: #a84cfe;
+
+    box-shadow:
+        0 6px 18px rgba(168, 76, 254, 0.18);
+}
+
+body.dark .scroll-arrow {
+    color: #a84cfe;
+}
+
+
+/* =======================================================
+   SOCIAL LINKS
+======================================================= */
+
+.social-link {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    background-color: #fff;
+
+    transition: all 0.2s ease;
+}
+
+.social-link img {
+    width: 18px;
+    height: 18px;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+
+    border-color: #000;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* DARK MODE */
+
+body.dark .social-link {
+    background-color: #010117;
+
+    border-color:
+        rgba(168, 76, 254, 0.45);
+}
+
+body.dark .social-link:hover {
+    border-color: #a84cfe;
+
+    box-shadow:
+        0 5px 15px rgba(168, 76, 254, 0.2);
+}
+
+
+/* =======================================================
+   ABOUT SECTION
+======================================================= */
+
+.about-label {
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.about-title {
+    color: #111827;
+}
+
+.about-text {
+    color: #374151;
+}
+
+.about-subtitle {
+    color: #6b7280;
+}
+
+
+/* =======================================================
+   LEARNING CARD
+======================================================= */
+
+.learning-card {
+    position: relative;
+
+    width: 13rem;
+    height: 13rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d1d5db;
+    border-radius: 1rem;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.learning-card:hover {
+    border-color: #9ca3af;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+
+    transform: translateY(-3px);
+}
+
+.learning-small {
+    color: #6b7280;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+.learning-title {
+    color: #111827;
+
+    margin-top: 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.learning-line {
+    width: 2rem;
+    height: 1px;
+
+    margin: 1rem auto;
+
+    background-color: #9ca3af;
+}
+
+.learning-text {
+    color: #6b7280;
+
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+
+/* =======================================================
+   EDUCATION
+======================================================= */
+
+.education-info {
+    margin-top: 5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.75rem;
+
+    color: #4b5563;
+
+    font-size: 0.875rem;
+}
+
+.education-icon {
+    width: 20px;
+    height: 20px;
+
+    opacity: 0.7;
+}
+
+.education-dot {
+    color: #9ca3af;
+}
+
+
+/* =======================================================
+   ABOUT / SKILLS - DARK MODE
+======================================================= */
+
+body.dark .about-label {
+    color: #9ca3af;
+}
+
+body.dark .about-title {
+    color: #a84cfe;
+}
+
+body.dark .about-text {
+    color: #e5e7eb;
+}
+
+body.dark .about-subtitle {
+    color: #9ca3af;
+}
+
+
+/* Learning card */
+
+body.dark .learning-card {
+    background-color: #08081f;
+    border-color: rgba(168, 76, 254, 0.4);
+
+    box-shadow:
+        0 0 25px rgba(168, 76, 254, 0.12);
+}
+
+body.dark .learning-card:hover {
+    border-color: #a84cfe;
+
+    box-shadow:
+        0 0 30px rgba(168, 76, 254, 0.18);
+}
+
+body.dark .learning-small {
+    color: #9ca3af;
+}
+
+body.dark .learning-title {
+    color: #a84cfe;
+}
+
+body.dark .learning-line {
+    background-color: rgba(168, 76, 254, 0.5);
+}
+
+body.dark .learning-text {
+    color: #d1d5db;
+}
+
+
+/* Education */
+
+body.dark .education-info {
+    color: #d1d5db;
+}
+
+body.dark .education-dot {
+    color: #6b7280;
+}
+
+
+/* =======================================================
+   TECH STACK
+======================================================= */
+
+.tech-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 120px;
+
+    padding: 10px 16px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #374151;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.tech-pill img {
+    width: 22px;
+    height: 22px;
+
+    object-fit: contain;
+}
+
+.tech-pill:hover {
+    transform: translateY(-4px);
+
+    border-color: #000000;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =======================================================
+   TECH STACK - DARK MODE
+======================================================= */
+
+body.dark .tech-pill {
+    border-color: #a84cfe;
+
+    background: #08081f;
+
+    color: #a84cfe;
+
+    box-shadow:
+        0 0 12px rgba(168, 76, 254, 0.08);
+}
+
+body.dark .tech-pill:hover {
+    border-color: #a84cfe;
+
+    background: #0d0d2b;
+
+    color: #a84cfe;
+
+    box-shadow:
+        0 8px 25px rgba(168, 76, 254, 0.18);
+}
+
+
+/* =======================================================
+   CURRENTLY CARD
+======================================================= */
+
+.learning-currently {
+    color: #9ca3af;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.learning-title {
+    margin-top: 0.5rem;
+    color: #111827;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.learning-description {
+    color: #6b7280;
+    font-size: 0.75rem;
+}
+
+.learning-line {
+    width: 2rem;
+    height: 1px;
+    margin: 1rem auto;
+
+    background-color: #d1d5db;
+}
+
+
+/* DARK MODE */
+
+body.dark .learning-currently {
+    color: #9ca3af;
+}
+
+body.dark .learning-title {
+    color: #a84cfe;
+}
+
+body.dark .learning-description {
+    color: #d1d5db;
+}
+
+body.dark .learning-line {
+    background-color: rgba(168, 76, 254, 0.5);
+}
+
+
+/* =======================================================
+   PROJECT CARDS
+======================================================= */
+
+.project-card {
+    background-color: #fff;
+
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-description {
+    color: #4b5563;
+}
+
+.tech-tag {
+    background-color: #f3f4f6;
+    color: #374151;
+
+    font-size: 12px;
+
+    padding: 2px 8px;
+
+    border-radius: 6px;
+}
+
+.project-live {
+    background-color: #000;
+    color: #fff;
+
+    padding: 6px 16px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.project-live:hover {
+    background-color: #333;
+}
+
+.project-code {
+    border: 1px solid #000;
+
+    padding: 6px 16px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.project-code:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* =======================================================
+   DARK MODE
+======================================================= */
+
+body.dark {
+    background-color: #010117;
+}
+
+
+/* Headings */
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: #a84cfe;
+}
+
+
+/* Paragraphs */
+
+body.dark p {
+    color: #ffffff;
+}
+
+
+/* Project cards */
+
+body.dark .project-card {
+    background-color: #010117;
+
+    box-shadow:
+        0 8px 20px rgba(168, 76, 254, 0.25);
+}
+
+body.dark .project-description {
+    color: #ffffff;
+}
+
+body.dark .tech-tag {
+    background-color: #1c1c3a;
+    color: #a84cfe;
+}
+
+
+/* Project buttons */
+
+body.dark .project-live {
+    background-color: #a84cfe;
+    color: #fff;
+}
+
+body.dark .project-live:hover {
+    background-color: #fff;
+    color: #010117;
+}
+
+body.dark .project-code {
+    border-color: #a84cfe;
+    color: #a84cfe;
+}
+
+body.dark .project-code:hover {
+    background-color: #a84cfe;
+    color: #010117;
+}
+
+
+/* =======================================================
+   CONTACT BUTTON
+   KEEP — CONTACT SECTION
+======================================================= */
+.button-send {
+    background-color: #000;
+    color: #fff;
+
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+
+    padding: 0.5rem 1.5rem;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+/* LIGHT THEME */
+.button-send:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+/* DARK THEME */
+body.dark .button-send {
+    background-color: #a84cfe;
+    color: #ffffff;
+    border-color: #a84cfe;
+}
+
+body.dark .button-send:hover {
+    background-color: #9339e8;
+    border-color: #9339e8;
+    color: #ffffff;
+}
+
+
+/* =======================================================
+   CONTACT FORM
+   KEEP — CONTACT SECTION
+======================================================= */
+
+body.dark input,
+body.dark textarea {
+    border-color: #a84cfe;
+    background-color: #010117;
+    color: #ffffff;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #cccccc;
+}
+
+body.dark input:focus,
+body.dark textarea:focus {
+    box-shadow: 0 0 0 2px rgba(168, 76, 254, 0.4);
+}
+
+body.dark label {
+    color: #a84cfe;
+}
+
+
+.contact-intro {
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+body.dark .contact-intro {
+    color: #e5e7eb;
+}
+
+.contact-title {
+    color: #111827;
+}
+
+body.dark .contact-title {
+    color: #a84cfe;
+}
+
+.contact-info {
+    color: #374151;
+}
+
+body.dark .contact-info {
+    color: #e5e7eb;
+}
+
+
+/* =======================================================
+   SECTION TEXT ANIMATION
+======================================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.reveal.show {
+    animation: revealUp 0.8s ease-out forwards;
+}
+
+.reveal-delay-1 {
+    animation-delay: 0.15s;
+}
+
+.reveal-delay-2 {
+    animation-delay: 0.3s;
+}
+
+.reveal-delay-3 {
+    animation-delay: 0.45s;
+}
+
+.reveal-delay-4 {
+    animation-delay: 0.6s;
+}
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

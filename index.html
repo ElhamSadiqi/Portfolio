@@ -1,0 +1,890 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed top-5 left-1/2 -translate-x-1/2
+              w-[calc(100%-2rem)] max-w-4xl
+              rounded-2xl
+              px-4 py-3
+              z-50">
+
+      <div class="flex items-center justify-between">
+
+        <a href="#home" class="nav-brand">
+          Elham
+        </a>
+
+
+        <ul class="hidden md:flex items-center gap-1">
+
+          <li>
+            <a href="#home" class="nav-link active">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="nav-link">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="nav-link">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+
+          <img class="toggle-sun" src="src/images/sun-dark.png" data-light="src/images/sun-dark.png"
+            data-dark="src/images/sun.png" alt="">
+
+          <img class="toggle-moon" src="src/images/moon-dark.png" data-light="src/images/moon-dark.png"
+            data-dark="src/images/moon.png" alt="">
+
+        </button>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <section id="home" class="mt-32 lg:pt-40 px-6 max-w-6xl mx-auto">
+
+    <div class="flex flex-col lg:flex-row gap-14 lg:gap-24 items-center">
+
+      <div class="w-full lg:max-w-2xl">
+
+        <h1 class="hero-title reveal text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
+          Hi, I'm Elham
+        </h1>
+
+        <h2
+          class="hero-subtitle reveal reveal-delay-1 text-2xl md:text-3xl lg:text-4xl font-semibold mt-3 tracking-tight">
+          Learning and building for the web
+        </h2>
+
+        <p class="hero-text reveal reveal-delay-2 mt-6 max-w-xl text-base md:text-lg leading-7">
+          I'm currently learning JavaScript, React, and Tailwind CSS
+          while building projects and exploring web development.
+        </p>
+
+        <div class="mt-8">
+
+          <p class="hero-label text-sm font-medium mb-3">
+            Find me online
+          </p>
+
+          <div class="flex items-center gap-3">
+
+            <a href="https://github.com/ElhamSadiqi" class="social-link" aria-label="GitHub">
+              <img src="src/images/github.png" alt="GitHub" data-light="src/images/github.png"
+                data-dark="src/images/github-purple.png">
+            </a>
+
+            <a href="https://www.facebook.com/elham.sadiqi.568?rdid=GjPEIopEqa8roorT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Lbph4SxFb%2F"
+              class="social-link" aria-label="Facebook">
+              <img src="src/images/facebook.png" alt="Facebook" data-light="src/images/facebook.png"
+                data-dark="src/images/facebook-purple.png">
+            </a>
+
+            <a href="#" class="social-link" aria-label="Twitter">
+              <img src="src/images/twitter.png" alt="Twitter" data-light="src/images/twitter.png"
+                data-dark="src/images/twitter-purple.png">
+            </a>
+
+            <a href="https://www.instagram.com/elham.sadiqi.568?stkn=MWY2eG55NDV1Y25uaQ%3D%3D" class="social-link"
+              aria-label="Instagram">
+              <img src="src/images/instagram.png" alt="Instagram" data-light="src/images/instagram.png"
+                data-dark="src/images/instagram-purple.png">
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="flex-shrink-0">
+
+        <div class="relative">
+
+          <div class="profile-border absolute inset-0 rounded-2xl
+                border-2
+                translate-x-3 translate-y-3">
+          </div>
+
+          <img class="profile-image relative
+             w-[220px] md:w-[280px] lg:w-[320px]
+             rounded-2xl
+             object-cover
+             border-2" src="src/images/my pic.jpg" alt="Elham">
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mt-40 pb-10 flex justify-center">
+
+      <a href="#about" class="scroll-button group">
+        <span>Explore more</span>
+
+        <span class="scroll-arrow">
+          ↓
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="about" class="mt-32 lg:mt-48 px-6 max-w-6xl mx-auto">
+
+    <div class="flex flex-col lg:flex-row gap-14 lg:gap-24 items-center">
+      <!-- TEXT -->
+      <div class="w-full lg:max-w-2xl">
+
+        <p class="about-label reveal">
+          ABOUT ME
+        </p>
+
+        <h2 class="about-title reveal reveal-delay-1 text-3xl md:text-4xl lg:text-5xl font-bold mt-4 tracking-tight">
+          A student learning through projects
+        </h2>
+
+        <div class="mt-6 max-w-xl space-y-4">
+
+          <p class="about-text reveal reveal-delay-2 text-base md:text-lg leading-7">
+            I'm a 5th-semester Computer Science student with an interest
+            in web development.
+          </p>
+
+          <p class="about-text reveal reveal-delay-3 text-base md:text-lg leading-7">
+            Most of what I'm learning comes from building things,
+            trying different technologies, and figuring out what works.
+            Right now, I'm spending most of my time with JavaScript,
+            React, Tailwind CSS, PHP, and SQL.
+          </p>
+
+          <p class="about-text reveal reveal-delay-3 text-base md:text-lg leading-7">
+            I'm still learning, and that's a big part of what I enjoy
+            about programming. Each project gives me something new to
+            understand and improve.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="flex-shrink-0">
+
+        <div class="relative">
+
+          <div class="profile-border absolute inset-0 rounded-2xl
+                border-2
+                translate-x-3 translate-y-3">
+          </div>
+
+          <img class="profile-image relative
+             w-[220px] md:w-[280px]
+             lg:w-[300px] lg:h-[380px]
+             max-w-full
+             rounded-2xl
+             object-cover
+             border-2" src="src/images/profile1.jpg" alt="">
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mt-32">
+
+      <div class="text-center">
+
+        <p class="about-label reveal">
+          WHAT I'M LEARNING
+        </p>
+
+        <h2 class="about-title reveal reveal-delay-1 text-3xl md:text-4xl font-bold mt-3 tracking-tight">
+          Education & Skills
+        </h2>
+
+        <p class="about-subtitle reveal reveal-delay-2 mt-3 text-sm md:text-base">
+          Technologies and tools I'm currently learning and using.
+        </p>
+
+      </div>
+
+
+
+      <div class="relative mt-12 w-full max-w-3xl mx-auto">
+
+        <div class="relative hidden md:block h-[430px]">
+
+          <div class="tech-item absolute top-8 left-[12%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML">
+
+              <span>HTML</span>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute top-8 right-[12%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS">
+
+              <span>CSS</span>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute top-[125px] left-[2%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+
+              <span>React</span>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute top-[125px] right-[2%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="JavaScript">
+
+              <span>JavaScript</span>
+
+            </div>
+
+          </div>
+
+          <div class="absolute top-1/2 left-1/2
+            -translate-x-1/2 -translate-y-1/2">
+
+            <div class="learning-center-card relative
+              w-52 h-52
+              rounded-2xl
+              border
+              flex flex-col
+              items-center justify-center
+              shadow-sm">
+
+              <div class="text-center px-4">
+
+                <p class="learning-currently">
+                  CURRENTLY
+                </p>
+
+                <h3 class="learning-title">
+                  Learning & Building
+                </h3>
+
+                <div class="learning-line"></div>
+
+                <p class="learning-description">
+                  Exploring web development through projects.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute bottom-[75px] left-[8%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+
+              <span>PHP</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="tech-item absolute bottom-[75px] right-[8%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#">
+
+              <span>C#</span>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute bottom-5 left-[32%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL">
+
+              <span>SQL</span>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute bottom-5 right-[32%]">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+
+              <span>Git</span>
+
+            </div>
+
+          </div>
+
+          <div class="tech-item absolute bottom-[-55px]
+                    left-1/2 -translate-x-1/2">
+
+            <div class="tech-pill">
+
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux">
+
+              <span>Linux</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="md:hidden grid grid-cols-2 gap-3">
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML">
+            <span>HTML</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS">
+            <span>CSS</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+            <span>React</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+            <span>PHP</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#">
+            <span>C#</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL">
+            <span>SQL</span>
+          </div>
+
+          <div class="tech-pill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+            <span>Git</span>
+          </div>
+
+          <div class="tech-pill col-span-2 max-w-[160px] mx-auto">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux">
+            <span>Linux</span>
+          </div>
+
+        </div>
+
+        <div class="mt-20
+               flex flex-wrap
+               items-center justify-center
+               gap-3
+               text-sm
+               text-gray-500
+               dark:text-gray-400">
+        </div>
+
+      </div>
+
+  </section>
+
+  <section id="projects" class="mt-32 px-6 max-w-6xl mx-auto">
+
+    <h2 class="projects-title reveal text-3xl md:text-4xl font-bold mt-3 text-center tracking-tight">
+      Projects
+    </h2>
+
+    <p class="projects-subtitle reveal reveal-delay-1 text-sm md:text-base mt-4 text-center">
+      A few things I've built while learning and practicing web development.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+
+        <div class="px-4 pt-4">
+          <img class="w-full rounded-lg" src="src/images/Portfolio.png" alt="">
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Portfolio Website</h3>
+
+          <p class="project-description text-sm mt-2">
+            A personal portfolio built with HTML, JavaScript, and Tailwind CSS.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="flex gap-3 mt-6">
+            <a class="project-live text-sm" href="#">Live</a>
+            <a class="project-code text-sm" href="#">Code</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="px-4 pt-4">
+          <img class="w-full rounded-lg" src="src/images/project2.png" alt="">
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Landing Page</h3>
+
+          <p class="project-description text-sm mt-2">
+            Responsive product landing page built with Tailwind CSS.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+
+          <div class="flex gap-3 mt-6">
+            <a class="project-live text-sm" href="#">Live</a>
+            <a class="project-code text-sm" href="#">Code</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="px-4 pt-4">
+          <img class="w-full rounded-lg" src="src/images/project3.png" alt="">
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Todo App</h3>
+
+          <p class="project-description text-sm mt-2">
+            A task management app using JavaScript and local storage.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="flex gap-3 mt-6">
+            <a class="project-live text-sm" href="#">Live</a>
+            <a class="project-code text-sm" href="#">Code</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="px-4 pt-4">
+          <img class="w-full rounded-lg" src="src/images/project2.png" alt="">
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Blog Layout</h3>
+
+
+          <p class="project-description text-sm mt-2">
+            Responsive blog layout using modern grid design.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+
+          <div class="flex gap-3 mt-6">
+            <a class="project-live text-sm" href="#">Live</a>
+            <a class="project-code text-sm" href="#">Code</a>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="px-4 pt-4">
+          <img class="w-full rounded-lg" src="src/images/project3.png" alt="">
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Weather App</h3>
+
+          <p class="project-description text-sm mt-2">
+            Weather application using a public API to display forecasts.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">API</span>
+          </div>
+
+          <div class="flex gap-3 mt-6">
+            <a class="project-live text-sm" href="#">Live</a>
+            <a class="project-code text-sm" href="#">Code</a>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <div class="px-4 pt-4">
+          <img class="w-full rounded-lg" src="src/images/Portfolio.png" alt="">
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-bold text-lg">UI Components</h3>
+
+
+          <p class="project-description text-sm mt-2">
+            A collection of reusable UI components built with Tailwind CSS.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-5">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+
+          <div class="flex gap-3 mt-6">
+            <a class="project-live text-sm" href="#">Live</a>
+            <a class="project-code text-sm" href="#">Code</a>
+          </div>
+
+
+        </div>
+
+      </div>
+
+  </section>
+
+  <section id="contact" class="mt-32 px-6 pb-52 md:pb-[260px] max-w-6xl mx-auto">
+
+    <p class="about-label text-center reveal">
+      CONTACT
+    </p>
+
+    <h2 class="contact-title reveal reveal-delay-1 text-2xl lg:text-4xl font-bold text-center mt-6">
+      Get in Touch With Me
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+
+      <div class="min-w-0 text-center lg:text-left">
+
+        <div class="contact-intro reveal reveal-delay-2">
+          <p>Have a question or just want to say hello?</p>
+          <p>Feel free to get in touch.</p>
+        </div>
+
+        <div class="mt-8 space-y-4">
+
+          <div class="flex items-center justify-center lg:justify-start gap-3 hover:translate-x-1 transition">
+            <img class="w-5 shrink-0" src="src/images/email.png" alt="" data-light="src/images/email.png"
+              data-dark="src/images/email-purple.png">
+            <p class="contact-info text-sm">elhamsadiqi01@gmail.com</p>
+          </div>
+
+          <div class="flex items-center justify-center lg:justify-start gap-3 hover:translate-x-1 transition">
+            <img class="w-5 shrink-0" src="src/images/phone.png" alt="" data-light="src/images/phone.png"
+              data-dark="src/images/phone-purple.png">
+            <p class="tcontact-info text-sm">+93 787815007</p>
+          </div>
+
+          <div class="flex items-center justify-center lg:justify-start gap-3 hover:translate-x-1 transition">
+            <img class="w-5 shrink-0" src="src/images/map.png" alt="" data-light="src/images/map.png"
+              data-dark="src/images/map-purple.png">
+            <p class="contact-info text-sm">Afghanistan</p>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center lg:justify-start gap-6 mt-8 social-icons">
+
+          <a href="https://github.com/ElhamSadiqi">
+            <img class="w-6 cursor-pointer hover:scale-110 transition" src="src/images/github.png" alt=""
+              data-light="src/images/github.png" data-dark="src/images/github-purple.png">
+          </a>
+
+          <a href="#">
+            <img class="w-6 cursor-pointer hover:scale-110 transition" src="src/images/linkedin.png" alt=""
+              data-light="src/images/linkedin.png" data-dark="src/images/linkedin-purple.png">
+          </a>
+
+          <a href="https://api.whatsapp.com/send/?phone=787815007&text&type=phone_number&app_absent=0">
+            <img class="w-6 cursor-pointer hover:scale-110 transition" src="src/images/whatsapp.png" alt=""
+              data-light="src/images/whatsapp.png" data-dark="src/images/whatsapp-purple.png">
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="min-w-0">
+
+        <form class="space-y-6">
+
+          <div>
+            <label class="text-sm">Name</label>
+            <input
+              class="w-full max-w-full border-2 border-black rounded-lg px-4 py-2 mt-2 transition focus:outline-none focus:ring-2 focus:ring-gray-300"
+              type="text" placeholder="Your name">
+          </div>
+
+          <div>
+            <label class="text-sm">Email</label>
+            <input
+              class="w-full max-w-full border-2 border-black rounded-lg px-4 py-2 mt-2 transition focus:outline-none focus:ring-2 focus:ring-gray-300"
+              type="email" placeholder="Your email">
+          </div>
+
+          <div>
+            <label class="text-sm">Message</label>
+            <textarea
+              class="w-full max-w-full border-2 border-black rounded-lg px-4 py-3 mt-2 transition focus:outline-none focus:ring-2 focus:ring-gray-300"
+              rows="5" placeholder="Your message"></textarea>
+          </div>
+
+          <button type="button" id="send-message" class="button-send w-full sm:w-auto">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+
+    const navLinks = document.querySelectorAll(".nav-link");
+    const sections = document.querySelectorAll("section");
+
+    // toggle icons (sun + moon)
+    const toggleIcons = document.querySelectorAll("#theme-toggle img");
+
+    // SOCIAL + CONTACT ICONS
+    const standaloneIcons = document.querySelectorAll("img[data-light]:not(.nav-link img)");
+
+    // -----------------------------
+    // UPDATE NAV ICONS
+    // -----------------------------
+    function updateNavIcons() {
+      const isDark = document.body.classList.contains("dark");
+
+      navLinks.forEach(link => {
+        const icon = link.querySelector("img");
+        if (!icon) return;
+
+        if (link.classList.contains("active")) {
+          icon.src = icon.dataset.active; // active icon = white
+        } else {
+          icon.src = isDark ? icon.dataset.dark : icon.dataset.light;
+        }
+      });
+    }
+
+    // -----------------------------
+    // UPDATE SOCIAL + CONTACT ICONS
+    // -----------------------------
+    function updateStandaloneIcons() {
+      const isDark = document.body.classList.contains("dark");
+
+      standaloneIcons.forEach(icon => {
+        icon.src = isDark ? icon.dataset.dark : icon.dataset.light;
+      });
+    }
+
+    // -----------------------------
+    // UPDATE TOGGLE ICONS (SUN + MOON)
+    // -----------------------------
+    function updateToggleIcons() {
+      const isDark = document.body.classList.contains("dark");
+
+      toggleIcons.forEach(icon => {
+        icon.src = isDark ? icon.dataset.dark : icon.dataset.light;
+      });
+    }
+
+    // -----------------------------
+    // THEME TOGGLE
+    // -----------------------------
+    toggleBtn.addEventListener("click", () => {
+
+      document.body.classList.toggle("dark");
+
+      updateNavIcons();
+      updateStandaloneIcons();
+      updateToggleIcons();
+
+    });
+
+    // -----------------------------
+    // NAV ACTIVE SECTION OBSERVER
+    // -----------------------------
+    const observer = new IntersectionObserver(entries => {
+
+      entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const id = entry.target.getAttribute("id");
+
+        navLinks.forEach(link => {
+
+          if (link.getAttribute("href") === "#" + id) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+
+        });
+
+        updateNavIcons();
+
+      });
+
+    }, { threshold: 0.6 });
+
+    // Observe sections
+    sections.forEach(section => {
+      if (section.id) observer.observe(section);
+    });
+
+    // -----------------------------
+    // INITIAL PAGE LOAD
+    // -----------------------------
+    updateNavIcons();
+    updateStandaloneIcons();
+    updateToggleIcons();
+
+
+    // -----------------------------
+    // SCROLL REVEAL ANIMATION
+    // -----------------------------
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach(entry => {
+
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add("show");
+
+          revealObserver.unobserve(entry.target);
+
+        });
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+    revealElements.forEach(element => {
+      revealObserver.observe(element);
+    });
+
+
+    const unavailableLinks = document.querySelectorAll(
+      '.project-live, .project-code'
+    );
+
+    unavailableLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        alert('This project is currently not available.');
+      });
+    });
+
+    const sendMessageButton = document.querySelector('#send-message');
+
+    sendMessageButton.addEventListener('click', () => {
+      alert('The contact form is currently not available.');
+    });
+  </script>
+</body>
+
+</html>
