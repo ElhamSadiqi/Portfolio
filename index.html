@@ -53,10 +53,10 @@
 
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
 
-          <img class="toggle-sun" src="src/images/sun-dark.png" data-light="src/images/sun-dark.png"
+          <img class="toggle-sun" src="src/images/sun-dark.png" data-icon="sun" data-light="src/images/sun-dark.png"
             data-dark="src/images/sun.png" alt="">
 
-          <img class="toggle-moon" src="src/images/moon-dark.png" data-light="src/images/moon-dark.png"
+          <img class="toggle-moon" src="src/images/moon-dark.png" data-icon="moon" data-light="src/images/moon-dark.png"
             data-dark="src/images/moon.png" alt="">
 
         </button>
@@ -95,25 +95,25 @@
           <div class="flex items-center gap-3">
 
             <a href="https://github.com/ElhamSadiqi" class="social-link" aria-label="GitHub">
-              <img src="src/images/github.png" alt="GitHub" data-light="src/images/github.png"
+              <img src="src/images/github.png" alt="GitHub" data-icon="github" data-light="src/images/github.png"
                 data-dark="src/images/github-purple.png">
             </a>
 
             <a href="https://www.facebook.com/elham.sadiqi.568?rdid=GjPEIopEqa8roorT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Lbph4SxFb%2F"
               class="social-link" aria-label="Facebook">
-              <img src="src/images/facebook.png" alt="Facebook" data-light="src/images/facebook.png"
-                data-dark="src/images/facebook-purple.png">
+              <img src="src/images/facebook.png" alt="Facebook" data-icon="facebook"
+                data-light="src/images/facebook.png" data-dark="src/images/facebook-purple.png">
             </a>
 
             <a href="#" class="social-link" aria-label="Twitter">
-              <img src="src/images/twitter.png" alt="Twitter" data-light="src/images/twitter.png"
+              <img src="src/images/twitter.png" alt="Twitter" data-icon="twitter" data-light="src/images/twitter.png"
                 data-dark="src/images/twitter-purple.png">
             </a>
 
             <a href="https://www.instagram.com/elham.sadiqi.568?stkn=MWY2eG55NDV1Y25uaQ%3D%3D" class="social-link"
               aria-label="Instagram">
-              <img src="src/images/instagram.png" alt="Instagram" data-light="src/images/instagram.png"
-                data-dark="src/images/instagram-purple.png">
+              <img src="src/images/instagram.png" alt="Instagram" data-icon="instagram"
+                data-light="src/images/instagram.png" data-dark="src/images/instagram-purple.png">
             </a>
 
           </div>
@@ -654,19 +654,19 @@
         <div class="mt-8 space-y-4">
 
           <div class="flex items-center justify-center lg:justify-start gap-3 hover:translate-x-1 transition">
-            <img class="w-5 shrink-0" src="src/images/email.png" alt="" data-light="src/images/email.png"
-              data-dark="src/images/email-purple.png">
+            <img class="w-5 shrink-0" src="src/images/email.png" alt="" data-icon="email"
+              data-light="src/images/email.png" data-dark="src/images/email-purple.png">
             <p class="contact-info text-sm">elhamsadiqi01@gmail.com</p>
           </div>
 
           <div class="flex items-center justify-center lg:justify-start gap-3 hover:translate-x-1 transition">
-            <img class="w-5 shrink-0" src="src/images/phone.png" alt="" data-light="src/images/phone.png"
-              data-dark="src/images/phone-purple.png">
+            <img class="w-5 shrink-0" src="src/images/phone.png" alt="" data-icon="phone"
+              data-light="src/images/phone.png" data-dark="src/images/phone-purple.png">
             <p class="tcontact-info text-sm">+93 787815007</p>
           </div>
 
           <div class="flex items-center justify-center lg:justify-start gap-3 hover:translate-x-1 transition">
-            <img class="w-5 shrink-0" src="src/images/map.png" alt="" data-light="src/images/map.png"
+            <img class="w-5 shrink-0" src="src/images/map.png" alt="" data-icon="map" data-light="src/images/map.png"
               data-dark="src/images/map-purple.png">
             <p class="contact-info text-sm">Afghanistan</p>
           </div>
@@ -677,17 +677,17 @@
 
           <a href="https://github.com/ElhamSadiqi">
             <img class="w-6 cursor-pointer hover:scale-110 transition" src="src/images/github.png" alt=""
-              data-light="src/images/github.png" data-dark="src/images/github-purple.png">
+              data-icon="github" data-light="src/images/github.png" data-dark="src/images/github-purple.png">
           </a>
 
           <a href="#">
             <img class="w-6 cursor-pointer hover:scale-110 transition" src="src/images/linkedin.png" alt=""
-              data-light="src/images/linkedin.png" data-dark="src/images/linkedin-purple.png">
+              data-icon="linkedin" data-light="src/images/linkedin.png" data-dark="src/images/linkedin-purple.png">
           </a>
 
           <a href="https://api.whatsapp.com/send/?phone=787815007&text&type=phone_number&app_absent=0">
             <img class="w-6 cursor-pointer hover:scale-110 transition" src="src/images/whatsapp.png" alt=""
-              data-light="src/images/whatsapp.png" data-dark="src/images/whatsapp-purple.png">
+              data-icon="whatsapp" data-light="src/images/whatsapp.png" data-dark="src/images/whatsapp-purple.png">
           </a>
 
         </div>
@@ -732,159 +732,8 @@
 
   </section>
 
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
 
-    const navLinks = document.querySelectorAll(".nav-link");
-    const sections = document.querySelectorAll("section");
-
-    // toggle icons (sun + moon)
-    const toggleIcons = document.querySelectorAll("#theme-toggle img");
-
-    // SOCIAL + CONTACT ICONS
-    const standaloneIcons = document.querySelectorAll("img[data-light]:not(.nav-link img)");
-
-    // -----------------------------
-    // UPDATE NAV ICONS
-    // -----------------------------
-    function updateNavIcons() {
-      const isDark = document.body.classList.contains("dark");
-
-      navLinks.forEach(link => {
-        const icon = link.querySelector("img");
-        if (!icon) return;
-
-        if (link.classList.contains("active")) {
-          icon.src = icon.dataset.active; // active icon = white
-        } else {
-          icon.src = isDark ? icon.dataset.dark : icon.dataset.light;
-        }
-      });
-    }
-
-    // -----------------------------
-    // UPDATE SOCIAL + CONTACT ICONS
-    // -----------------------------
-    function updateStandaloneIcons() {
-      const isDark = document.body.classList.contains("dark");
-
-      standaloneIcons.forEach(icon => {
-        icon.src = isDark ? icon.dataset.dark : icon.dataset.light;
-      });
-    }
-
-    // -----------------------------
-    // UPDATE TOGGLE ICONS (SUN + MOON)
-    // -----------------------------
-    function updateToggleIcons() {
-      const isDark = document.body.classList.contains("dark");
-
-      toggleIcons.forEach(icon => {
-        icon.src = isDark ? icon.dataset.dark : icon.dataset.light;
-      });
-    }
-
-    // -----------------------------
-    // THEME TOGGLE
-    // -----------------------------
-    toggleBtn.addEventListener("click", () => {
-
-      document.body.classList.toggle("dark");
-
-      updateNavIcons();
-      updateStandaloneIcons();
-      updateToggleIcons();
-
-    });
-
-    // -----------------------------
-    // NAV ACTIVE SECTION OBSERVER
-    // -----------------------------
-    const observer = new IntersectionObserver(entries => {
-
-      entries.forEach(entry => {
-
-        if (!entry.isIntersecting) return;
-
-        const id = entry.target.getAttribute("id");
-
-        navLinks.forEach(link => {
-
-          if (link.getAttribute("href") === "#" + id) {
-            link.classList.add("active");
-          } else {
-            link.classList.remove("active");
-          }
-
-        });
-
-        updateNavIcons();
-
-      });
-
-    }, { threshold: 0.6 });
-
-    // Observe sections
-    sections.forEach(section => {
-      if (section.id) observer.observe(section);
-    });
-
-    // -----------------------------
-    // INITIAL PAGE LOAD
-    // -----------------------------
-    updateNavIcons();
-    updateStandaloneIcons();
-    updateToggleIcons();
-
-
-    // -----------------------------
-    // SCROLL REVEAL ANIMATION
-    // -----------------------------
-
-    const revealElements = document.querySelectorAll(".reveal");
-
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-
-        entries.forEach(entry => {
-
-          if (!entry.isIntersecting) return;
-
-          entry.target.classList.add("show");
-
-          revealObserver.unobserve(entry.target);
-
-        });
-
-      },
-      {
-        threshold: 0.15
-      }
-    );
-
-    revealElements.forEach(element => {
-      revealObserver.observe(element);
-    });
-
-
-    const unavailableLinks = document.querySelectorAll(
-      '.project-live, .project-code'
-    );
-
-    unavailableLinks.forEach(link => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        alert('This project is currently not available.');
-      });
-    });
-
-    const sendMessageButton = document.querySelector('#send-message');
-
-    sendMessageButton.addEventListener('click', () => {
-      alert('The contact form is currently not available.');
-    });
-  </script>
+  <script type="module" src="/src/script.js"></script>
 </body>
 
 </html>
